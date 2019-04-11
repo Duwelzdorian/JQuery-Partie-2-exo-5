@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Exercice 5</title>
+</head>
+
+<body>
+  <form>
+    <label for="lastName">Nom : </label><input type="text" name="lastName" id="lastName" />
+    <label for="firstName">Prénom : </label><input type="text" name="firstName" id="firstName" />
+    <button type="button" name="button">Envoyer</button>
+  </form>
+  <script src="assets/js/jquery-3.3.1.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript">
+          $('input').on('focusin', function() {
+            $(this).css('border', '1px solid green');
+          });
+          $('input').on('focusout', function() {
+            $(this).css('border', '1px solid red');
+          });
+  </script>
+</body>
+
+</html>
+
+
+
+
+Quand un champ a le focus, définir sa bordure à **1px solid green**.
+Quand le champ perd le focus, définir la bordure à **1px solid red**.
